@@ -141,7 +141,8 @@ padding: 0 40px;
 
 .navegacao{
 
-width: 100%;
+width: 90%;
+margin: 0 auto;
 
 .boxNav{
 
@@ -158,7 +159,7 @@ border: none;
 background: none;
 cursor: pointer;
 font-size: 1em;
-padding: 0 10px;
+padding: 10px !important;
 color: var(--colorBranco);
 
 }
@@ -254,7 +255,7 @@ margin: 0 -30px;
 
 .BoxInfo{
 
-width: 95%;
+width: 90%;
 margin: 0 auto;
 
 h1{
