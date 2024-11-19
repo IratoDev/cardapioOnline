@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: iFood RC Titulos, iFood RC Textos, helvetica, sans-serif;
+  background-color: var(--colorSecundaria);
+}
+
+:root {
+  --colorPrimario: #800020;
+  --colorSecundaria: #F5F5DC;
+  --colorBranco: #FFFFFF;
+}
+
+#cabecalho {
+  width: 100%;
+}
+#cabecalho .Conteiner {
+  position: relative;
+  padding: 1.5em 40px;
+  margin-bottom: 2em;
+}
+#cabecalho .Conteiner .Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 0 20px;
+  height: 400px;
+}
+#cabecalho .Conteiner .Box .banner {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  background: url("./assets/imagens/Banner.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#cabecalho .Conteiner .Box .BoxInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  max-width: 600px;
+  padding: 1.5em 0;
+  background-color: var(--colorPrimario);
+  border-radius: 20px;
+  filter: drop-shadow(5px 5px 10px #000);
+  color: var(--colorBranco);
+}
+#cabecalho .Conteiner .Box .BoxInfo .boxLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+#cabecalho .Conteiner .Box .BoxInfo .boxLogo img {
+  width: 100%;
+  max-width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#cabecalho .Conteiner .Box .BoxInfo h1 {
+  text-transform: uppercase;
+  font-size: 2em;
+}
+#cabecalho .Conteiner .Box .BoxInfo .Info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+#cabecalho .Conteiner .Box .BoxInfo .Info button {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  border: none;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  background: none;
+  color: var(--colorBranco);
+}
+#cabecalho .Conteiner .Box .BoxInfo .Info button:hover {
+  color: var(--colorSecundaria);
+}
+#cabecalho .Conteiner .Box .BoxInfo .Info button svg {
+  width: 25px;
+  height: auto;
+}
+
+#Cardapio {
+  width: 100%;
+  padding: 3em 0;
+}
+#Cardapio .Conteiner {
+  padding: 0 40px;
+}
+#Cardapio .Conteiner .navegacao {
+  width: 100%;
+}
+#Cardapio .Conteiner .navegacao .boxNav {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1em 20px;
+  background: var(--colorPrimario);
+  border-radius: 20px;
+}
+#Cardapio .Conteiner .navegacao .boxNav button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 0 10px;
+  color: var(--colorBranco);
+}
+#Cardapio .Conteiner .navegacao .boxNav button.focused {
+  color: var(--colorSecundaria);
+  border-bottom: 3px solid var(--colorSecundaria);
+  line-height: 1;
+}
+#Cardapio .Conteiner .Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4em 20px;
+  gap: 0.5em;
+}
+
+#rodape {
+  width: 100%;
+  padding: 3em 0;
+  background-color: var(--colorPrimario);
+}
+#rodape .Conteiner {
+  padding: 0 40px;
+}
+#rodape .Conteiner .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  gap: 1.5em;
+}
+#rodape .Conteiner .box .BoxImg {
+  padding: 10px;
+}
+#rodape .Conteiner .box .BoxImg img {
+  width: 100%;
+  border-radius: 20px;
+  max-width: 200px;
+  height: auto;
+}
+#rodape .Conteiner .box h4 {
+  font-size: 1em;
+  color: var(--colorSecundaria);
+}
+
+@media screen and (max-width: 760px) {
+  #cabecalho .Conteiner {
+    padding: 1.5em 10px;
+  }
+  #cabecalho .Conteiner .Box {
+    padding: 0 5px;
+  }
+  #cabecalho .Conteiner .Box .banner {
+    margin: 0 -30px;
+  }
+  #cabecalho .Conteiner .Box .BoxInfo {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #cabecalho .Conteiner .Box .BoxInfo h1 {
+    font-size: 1.5em;
+  }
+  #cabecalho .Conteiner .Box .BoxInfo .Info button {
+    flex-direction: column;
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 760px) {
+  #Cardapio .Conteiner {
+    padding: 0 20px;
+  }
+  #Cardapio .Conteiner .navegacao .boxNav {
+    padding: 1em 10px;
+  }
+  #Cardapio .Conteiner .navegacao .boxNav button {
+    padding: 0.5em;
+  }
+  #Cardapio .Conteiner .Box {
+    padding: 4em 20px;
+  }
+}/*# sourceMappingURL=StyleCardapio.module.css.map */

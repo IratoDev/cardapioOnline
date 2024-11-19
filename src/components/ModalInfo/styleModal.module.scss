@@ -1,0 +1,71 @@
+.container {
+padding: 20px 40px;
+display: flex;
+flex-direction: column;
+gap: 20px; 
+
+.box {
+padding: 10px 20px; 
+text-transform: uppercase;
+color: #fff;
+
+border-radius: 8px; 
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+h3 {
+font-size: 1.5em;
+margin-bottom: 10px;
+font-weight: bold;
+}
+h4 {
+font-size: 1.3em;
+margin-bottom: 8px;
+color: #f0f0f0; 
+}
+  
+p {
+font-size: 1em; 
+line-height: 1.5;
+color: #cccccc; 
+}
+
+ul{
+
+li{
+
+line-height: 2;
+
+}
+
+}
+
+}
+}
+  
+.ButtonClose {
+position: absolute;
+top: 10px;
+right: 10px; 
+padding: 0.5em;
+background-color: transparent;
+border: none;
+cursor: pointer;
+color: #fff;
+font-size: 1.2em;
+transition: transform 0.2s ease, color 0.2s ease;
+
+&:hover {
+transform: scale(1.1);
+}
+}
+  
+@media screen and (max-width: 760px) {
+.container {
+padding: 10px 20px;
+
+.box {
+padding: 10px;
+font-size: 0.9em;
+}
+}
+}
+  
